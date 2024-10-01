@@ -102,6 +102,7 @@ public class LinkedList {
                 tail = null;
             }
 
+            size--;
             return;
         }
 
@@ -118,6 +119,7 @@ public class LinkedList {
 
             prevNode.next = null;
             tail = prevNode;
+            size--;
             return;
         }
 
@@ -136,5 +138,6 @@ public class LinkedList {
         }
 
         prevNode.next = currentNode.next;
+        size--;
     }
 }
